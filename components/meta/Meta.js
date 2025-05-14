@@ -46,7 +46,7 @@ export default function Meta({ title, keywords, description }) {
             <link rel="icon" href={fevicon} />
             <title>{title}</title>
             <meta type="copyright" content="Resume Maker" />
-            <meta type="author" content="HOT HEAD" />
+            <meta type="author" content="" />
             {/* Open Graph */}
             <meta property="og:type" content="website" />
             <meta property="og:url" content={homepage} />

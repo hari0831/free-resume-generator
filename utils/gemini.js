@@ -1,14 +1,14 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 // Initialize with API version v1
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const genAI = new GoogleGenerativeAI("AIzaSyCdHIClvth5SS0MlnLAEtxinLH0zKNNpaA");
 
 export async function analyzeResume(resumeData) {
-  if (!process.env.GEMINI_API_KEY) {
-    throw new Error("Missing Gemini API key");
-  }
+  // if (!process.env.GEMINI_API_KEY) {
+  //   throw new Error("Missing Gemini API key");
+  // }
 
-  const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
   const prompt = `Analyze this resume data and provide feedback on:
   1. Overall strength and weaknesses
@@ -30,9 +30,9 @@ export async function analyzeResume(resumeData) {
 
 export async function getSuggestions(section, currentContent) {
   // Check for API key first
-  if (!process.env.GEMINI_API_KEY) {
-    throw new Error("API_ERROR: Missing or invalid Gemini API key");
-  }
+  // if (!process.env.GEMINI_API_KEY) {
+  //   throw new Error("API_ERROR: Missing or invalid Gemini API key");
+  // }
 
   // Validate content
   if (!currentContent || currentContent.trim() === '') {
