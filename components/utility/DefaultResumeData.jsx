@@ -58,21 +58,19 @@ const DefaultResumeData = {
     {
       title: "Technical Skills",
       skills: [
-        "React", "Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "PostgreSQL", 
-        "Express", "Python", "Java", "Docker", "AWS", "Kubernetes", "Jenkins",
-        "Firebase", "Redis", "Node.js", "Git", "REST API"
+       
       ]
     },
     {
       title: "Soft Skills",
       skills: [
-        "Collaboration", "Problem-solving", "Communication", "Time management", "Result-oriented"
+        
       ]
     },
     {
       title: "Additional Skills",
       skills: [
-        "CI/CD", "Microservices", "System Design", "Cloud Architecture"
+        
       ] 
     }
   ],
